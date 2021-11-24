@@ -1,0 +1,11 @@
+python finetune.py \
+--do_train_after_pretrain \
+--pre_model_timestamp 2021-10-21_10_21_06 \
+--pre_epoch 85 \
+--gpu_id 2 \
+--maxlen 64 \
+--batch_size 64 \
+--struc 'cls' \
+--warmup \
+--epoch 5 \
+--model_type 'nezha_base' 
