@@ -2,9 +2,6 @@
 from finetune_args import args
 from time import time
 from tqdm import tqdm
-from transformers.models.roberta.configuration_roberta import RobertaConfig
-from pretrain_model_utils.nezha.configuration_nezha import NeZhaConfig
-from transformers import BertModel, BertConfig
 from torch.utils.data import DataLoader
 from common_utils.optimizer import build_optimizer
 from sklearn.metrics import classification_report, accuracy_score
@@ -16,7 +13,6 @@ from common_utils.util import load_data, get_save_path, get_logger, set_seed, FG
 from common_utils.MyDataset import FineTuneDataset, BlockShuffleDataset
 from common_utils.DataLoaders import BlockShuffleDataLoader
 from models.finetune_model import Model
-import random
 
 os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu_id)
 
