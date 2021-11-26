@@ -90,24 +90,6 @@ parser.add_argument("--test_data_path", default='./data/test_A.tsv', type=str)
 args = parser.parse_args()
 
 # 开源预训练模型路径
-model_map = dict()
-
-model_map['roberta'] = {
-    'model_path': "/home/wangzhili/YangYang/pretrainModel/chinese_roberta_wwm_ext_pytorch/pytorch_model.bin",
-    'config_path': "/home/wangzhili/YangYang/pretrainModel/chinese_roberta_wwm_ext_pytorch/bert_config.json"
-}
-model_map['nezha_wwm'] = {
-    'model_path': "/home/wangzhili/YangYang/pretrainModel/nezha-cn-wwm/pytorch_model.bin",
-    'config_path': "/home/wangzhili/YangYang/pretrainModel/nezha-cn-wwm/config.json"
-}
-model_map['nezha_base'] = {
-    'model_path': "/home/wangzhili/YangYang/pretrainModel/nezha-cn-base/pytorch_model.bin",
-    'config_path': "/home/wangzhili/YangYang/pretrainModel/nezha-cn-base/config.json"
-}
-model_map['ernie-gram'] = {
-    'model_path': "/home/wangzhili/YangYang/pretrainModel/ernie-gram/pytorch_model.bin",
-    'config_path': "/home/wangzhili/YangYang/pretrainModel/ernie-gram/config.json"
-}
 pretrain_model_path = {
        'nezha_base': '/home/wangzhili/YangYang/pretrainModel/nezha-cn-base/',
        'nezha_wwm': '/home/wangzhili/YangYang/pretrainModel/nezha-cn-wwm/',
